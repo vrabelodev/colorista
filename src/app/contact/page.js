@@ -1,3 +1,10 @@
+'use client'
+import Navbar from "../components/NavBar";
+
+
 export default function contact() {
-    return <div>contact page </div>
+    return <>
+    <Navbar/>
+    pagina contact </>
+
 }

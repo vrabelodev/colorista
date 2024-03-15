@@ -77,7 +77,7 @@ export function Cores() {
     return (<>{isClient ? 
         
         <div className={styles.container}>
-            <h1 className={styles.title}>Colorista</h1>
+            
             <div  className={styles.wrapperColor}>
                 {cores.map((el, i) =>
                     <div
