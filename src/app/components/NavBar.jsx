@@ -29,6 +29,7 @@ function Navbar() {
     return (
         <header className={styles.mainHeader} >
             <Link className={styles.brandLogo} href="/">
+                           <img src="logo.svg" width={45} alt="Colorista logo" />
                            <h1 className={styles.navTitle}>Colorista</h1>
                         </Link>
             

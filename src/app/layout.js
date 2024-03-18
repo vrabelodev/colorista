@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Colorista - The easiest color palette generator on internet',  
-  description: 'The easiest way to generate beautiful colors combinations for your designs.',
+  description: 'Generate beautiful colors combinations for your designs.',
   keywords: ['color scheme', 'scheme color', 'color schemes', 'color theme', 'color palette',
              'color themes', 'color palettes', 'color combinations', 'color', 'colors', 'palettes',
              'hex color wheel', 'pastel color palette', 'color wheel', 'color combination', 'color pallete',
