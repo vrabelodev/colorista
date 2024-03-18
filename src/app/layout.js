@@ -11,11 +11,6 @@ export const metadata = {
              'hex color wheel', 'pastel color palette', 'color wheel', 'color combination', 'color pallete',
              'color names', 'web color schemes', 'color wheel generator', 'random color palette generator',
              'color schemes generator', 'ui color palette generator', 'pretty colors', 'vintage color'],
-  
-  icons: {
-    icon: './favicon.svg',
-  },
-
   }           
 
 
