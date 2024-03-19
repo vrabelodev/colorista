@@ -46,7 +46,7 @@ function Navbar() {
                     <li className={styles.navListItem}>
                         {/* <a href="#">About</a> */}
                         <Link href="/aboutus">
-                           About Us
+                           About
                         </Link>
                     </li>
                     <li className={styles.navListItem}>
