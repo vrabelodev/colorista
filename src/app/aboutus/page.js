@@ -8,12 +8,12 @@ export default function aboutus() {
   return (
     <>
       <Navbar />
-      <div className={styles}>
+      <div className={styles.pageContainer}>
         <h1 className={styles.h1}>About Us</h1>
         <h2>Discover Your True Colors with Colorista</h2>
         <p>
           Unlock a world of vibrant hues and unleash your creativity with
-          Colorista – your ultimate destination for all things color-related.
+          Colorista - your ultimate destination for all things color-related.
         </p>
         <p>
           At Colorista, we believe that color is more than just a visual
