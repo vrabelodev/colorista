@@ -1,4 +1,5 @@
 .container {
+  color: var(--secondary-color);
   padding: 2rem 0;
   height: 30px;
   font-family: monospace;

@@ -90,7 +90,7 @@ export function Cores() {
             var yiq = hexToYIQ(hex);
 
             // Determine background type
-            return yiq >= 128 ? "#000" : "#fff";
+            return yiq >= 128 ? "#292929" : "#fffce5";
         }
 
   

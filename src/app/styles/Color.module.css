@@ -22,41 +22,41 @@
 .btnGerarpaleta {
     background-color: transparent;
     padding: 0.5rem;
-    border: 2px #292929 solid;
+    border: 2px var(--secondary-color) solid;
     width: 160px;
-    color: #292929;
+    color: var(--secondary-color);
     border-radius: 8px;
     font-size: 1.2rem;
     font-family: monospace;
 }
 
-.boxColor p{
-    
-    
+.boxColor p {
+
+
     border-radius: 5px;
 
-  
+
 }
+
 .boxColor {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   
+
     align-items: center;
     width: 150px;
     border-radius: 15px;
     font-family: monospace;
     font-size: 1.5rem;
     font-weight: 400;
-    
+
 }
 
 .btn {
     background-color: transparent;
     padding: 0.5rem;
-    border: 2px #fff solid;
+    border: 2px var(--primary-color) solid;
     width: 120px;
-    /*color: #fff;*/
     border-radius: 8px;
     font-family: monospace;
     font-size: 1.2rem;

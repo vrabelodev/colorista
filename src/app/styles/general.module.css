@@ -1,21 +1,35 @@
 .h1 {
     font-size: 3rem;
     font-weight: bold;
+    padding-bottom: 2rem;
 }
 
 .bodyContainer {
-    height: 90vh;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+
 }
 
-.pageContainer{
+.pageContainer {
     margin: 1.5rem;
+    color: var(--secondary-color);
+    max-width: 50vw;
 }
-.pageContainer p{
+
+.pageContainer p {
     margin: 1.5rem;
     font-size: 1rem;
+    text-align: justify;
 }
 
+@media screen and (max-width: 768px) {
+    .pageContainer {
+
+        max-width: 100%;
+    }
+
+
+}
