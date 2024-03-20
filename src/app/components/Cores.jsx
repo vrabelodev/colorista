@@ -68,9 +68,9 @@ export function Cores() {
 
     }, [cores]);
 
-    useEffect(() => {
+   
 
-        function getContrastYIQ(cores) {
+        function getContrastYIQ(hex) {
 
             // Function to convert hexadecimal to YIQ directly
             function hexToYIQ(hex) {
@@ -90,10 +90,10 @@ export function Cores() {
             var yiq = hexToYIQ(hex);
 
             // Determine background type
-            return yiq >= 128 ? "Light" : "Dark";
+            return yiq >= 128 ? "#000" : "#fff";
         }
 
-    }, [cores]);
+  
 
 
 
@@ -116,11 +116,15 @@ export function Cores() {
                     <div
                         className={styles.boxColor}
 
-                        style={{ backgroundColor: el.cor }}
+                        style={{ backgroundColor: el.cor,
+                        color: getContrastYIQ(el.cor) }}
                         key={i}>
 
                         <p>{el.cor}</p>
-                        <button className={styles.btn} onClick={() => handleClick(i)}>{el.isblocked ? "desbloquear" : "bloquear"}</button>
+                        <button 
+                        style={{ color: getContrastYIQ(el.cor),
+                        borderColor: getContrastYIQ(el.cor)}}
+                        className={styles.btn} onClick={() => handleClick(i)}>{el.isblocked ? "desbloquear" : "bloquear"}</button>
                     </div>
                     
                 )}</div>

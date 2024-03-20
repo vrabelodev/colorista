@@ -5,11 +5,7 @@
     flex-direction: column;
 }
 
-.title {
-    color: white;
-    font-family: monospace;
-    padding-top: 24px;
-}
+
 
 .wrapperColor {
     display: flex;
@@ -35,7 +31,7 @@
 }
 
 .boxColor p{
-    color: #fff;
+    
     
     border-radius: 5px;
 
@@ -45,7 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: #fff;
+   
     align-items: center;
     width: 150px;
     border-radius: 15px;
@@ -60,7 +56,7 @@
     padding: 0.5rem;
     border: 2px #fff solid;
     width: 120px;
-    color: #fff;
+    /*color: #fff;*/
     border-radius: 8px;
     font-family: monospace;
     font-size: 1.2rem;
