@@ -1,9 +1,7 @@
 .container {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  color: var(--secondary-color);
+  padding: 2rem 0;
   height: 30px;
-  background-color: transparent;
   font-family: monospace;
   font-size: 1.2rem;
   display: flex;

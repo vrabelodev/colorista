@@ -1,90 +1,79 @@
-.container{
-    background-color: #292929;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+.container {
     align-items: center;
- margin-bottom: 36px;
+    margin-bottom: 36px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+}
 
-}
-.title {
-    color: white;
-    font-family: monospace;
-    padding-top: 24px;
-}
-.wrapperColor{
+
+
+.wrapperColor {
     display: flex;
     align-self: center;
     height: 60vh;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
-    padding: 4px;
+    padding: 16px;
     margin: 36px;
-
-
     text-align: center;
-
-    
-
     font-family: monospace;
-
-    
 }
 
-.btnGerarpaleta{
-    background-color: white;
+.btnGerarpaleta {
+    background-color: transparent;
     padding: 0.5rem;
-    border: 2px #fff solid;
+    border: 2px var(--secondary-color) solid;
     width: 160px;
-    color:  #292929;
+    color: var(--secondary-color);
     border-radius: 8px;
     font-size: 1.2rem;
     font-family: monospace;
-    
 }
 
+.boxColor p {
 
 
+    border-radius: 5px;
 
-.boxColor{
+
+}
+
+.boxColor {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: #fff;
+
     align-items: center;
     width: 150px;
     border-radius: 15px;
     font-family: monospace;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
-} 
 
-.btn{
+}
+
+.btn {
     background-color: transparent;
     padding: 0.5rem;
-    border: 2px #fff solid;
+    border: 2px var(--primary-color) solid;
     width: 120px;
-    color: #fff;
     border-radius: 8px;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    
+
 }
 
 @media screen and (max-width: 768px) {
-    .boxColor{
+    .boxColor {
         flex-direction: row;
         width: 100%;
         height: 100%;
     }
 
-    .wrapperColor{
+    .wrapperColor {
         flex-direction: column;
         width: 100%;
 
     }
 }
-
-

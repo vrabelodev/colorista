@@ -1,0 +1,15 @@
+{
+    "name": "Colorista - The easiest color palette generator on internet",
+    "short_name": "Colorista",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#292929",
+    "description": "Create beautiful colors combinations for your designs.",
+    "icons": [
+        {
+            "src": "logo.svg",
+            "type": "image/svg+xml",
+            "sizes": "any"
+        }
+    ]
+}

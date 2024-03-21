@@ -88,7 +88,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head><link rel="manifest" href="/manifest.json"/></head>
+      <body>{children}</body>
       <GoogleAnalytics gtmId="G-6DL9LFWCKE" />
       <GoogleTagManager gtmId="G-6DL9LFWCKE" />
     </html>
