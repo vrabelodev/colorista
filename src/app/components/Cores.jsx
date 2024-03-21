@@ -48,7 +48,7 @@ export function Cores() {
             }
             setCores(novoState);
         }
-        console.log(cores)
+        
     }
 
 
@@ -68,32 +68,32 @@ export function Cores() {
 
     }, [cores]);
 
-   
 
-        function getContrastYIQ(hex) {
 
-            // Function to convert hexadecimal to YIQ directly
-            function hexToYIQ(hex) {
-                // Remove '#' if it's there
-                hex = hex.replace('#', '');
+    function getContrastYIQ(hex) {
 
-                // Extract R, G, and B components from hexadecimal
-                var r = parseInt(hex.substr(0, 2), 16);
-                var g = parseInt(hex.substr(2, 2), 16);
-                var b = parseInt(hex.substr(4, 2), 16);
+        // Function to convert hexadecimal to YIQ directly
+        function hexToYIQ(hex) {
+            // Remove '#' if it's there
+            hex = hex.replace('#', '');
 
-                // Calculate YIQ directly
-                return (r * 299 + g * 587 + b * 114) / 1000;
-            }
+            // Extract R, G, and B components from hexadecimal
+            var r = parseInt(hex.substr(0, 2), 16);
+            var g = parseInt(hex.substr(2, 2), 16);
+            var b = parseInt(hex.substr(4, 2), 16);
 
             // Calculate YIQ directly
-            var yiq = hexToYIQ(hex);
-
-            // Determine background type
-            return yiq >= 128 ? "#292929" : "#fffce5";
+            return (r * 299 + g * 587 + b * 114) / 1000;
         }
 
-  
+        // Calculate YIQ directly
+        var yiq = hexToYIQ(hex);
+
+        // Determine background type
+        return yiq >= 128 ? "#292929" : "#fffce5";
+    }
+
+
 
 
 
@@ -116,17 +116,21 @@ export function Cores() {
                     <div
                         className={styles.boxColor}
 
-                        style={{ backgroundColor: el.cor,
-                        color: getContrastYIQ(el.cor) }}
+                        style={{
+                            backgroundColor: el.cor,
+                            color: getContrastYIQ(el.cor)
+                        }}
                         key={i}>
 
                         <p>{el.cor}</p>
-                        <button 
-                        style={{ color: getContrastYIQ(el.cor),
-                        borderColor: getContrastYIQ(el.cor)}}
-                        className={styles.btn} onClick={() => handleClick(i)}>{el.isblocked ? "desbloquear" : "bloquear"}</button>
+                        <button
+                            style={{
+                                color: getContrastYIQ(el.cor),
+                                borderColor: getContrastYIQ(el.cor)
+                            }}
+                            className={styles.btn} onClick={() => handleClick(i)}>{el.isblocked ? "desbloquear" : "bloquear"}</button>
                     </div>
-                    
+
                 )}</div>
 
             <button onClick={() => geraPaleta()}
