@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar from "../components/NavBar";
-import FooterComponent from "../components/Footer";
+import FooterComponent from "../components/footer";
 import styles from "../styles/general.module.css";
 
 export default function aboutus() {
