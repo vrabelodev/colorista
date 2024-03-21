@@ -1,0 +1,55 @@
+.contactsForm {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.contactsFormContainer {
+    width: 30vw;
+
+
+}
+
+.contactsFormContainer h1 {
+    font-size: 2rem;
+    padding: 1rem;
+
+
+}
+
+.inputContainer {
+    height: 2rem;
+    margin: .25rem 0 1rem 0;
+    border: 2px var(--secondary-color) solid;
+
+}
+
+.contactsForm label {
+    font-size: 1.2rem;
+}
+
+.contactsForm legend {
+    font-size: 1.5rem;
+}
+
+.contactsSubmit {
+    width: 12rem;
+    margin: auto;
+    height: 2.5rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    border: 2px var(--secondary-color) solid;
+    color: var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+@media screen and (max-width: 768px) {
+    .contactsFormContainer {
+
+      width: 100%;
+    }
+}
