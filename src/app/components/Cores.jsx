@@ -1,6 +1,9 @@
 'use client'
 import { useEffect, useState } from "react"
 import styles from "../styles/Color.module.css"
+import { ToastContainer, toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
+import CopyButton from "./CopyButton";
 
 
 
@@ -48,7 +51,7 @@ export function Cores() {
             }
             setCores(novoState);
         }
-        
+
     }
 
 
@@ -105,6 +108,15 @@ export function Cores() {
         })))
     }
 
+    function handleCopy(index) {
+
+        console.log(cores[index].cor)
+        navigator.clipboard.writeText(cores[index].cor)
+
+        toast.success("copied");
+
+    }
+
 
 
     return (<>{isClient ?
@@ -123,20 +135,42 @@ export function Cores() {
                         key={i}>
 
                         <p>{el.cor}</p>
+
+
+                        <button
+                            className={styles.btncopy} onClick={() => handleCopy(i)}>
+                            {/* <img src="copy-btn.svg" height={32} style={{
+                               
+                                
+                            }} /> */}
+                                
+                            <CopyButton color={getContrastYIQ(el.cor)}/>
+                        </button>
+
                         <button
                             style={{
                                 color: getContrastYIQ(el.cor),
                                 borderColor: getContrastYIQ(el.cor)
                             }}
-                            className={styles.btn} onClick={() => handleClick(i)}>{el.isblocked ? "desbloquear" : "bloquear"}</button>
+                            className={styles.btn} onClick={() => handleClick(i)}>{el.isblocked ? "desbloquear" : "bloquear"}
+                        </button>
+
+
+
                     </div>
 
-                )}</div>
+                )} </div>
 
             <button onClick={() => geraPaleta()}
-                className={styles.btnGerarpaleta}> Gerar paleta</button>
+                className={styles.btnGerarpaleta}> Gerar paleta
+            </button>
 
         </div> : null}
+
+
+        <ToastContainer
+            position="bottom-right"
+            autoClose={2000} />
     </>
     )
 }
