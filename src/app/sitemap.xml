@@ -8,17 +8,17 @@
     <xhtml:link rel="canonical" href="https://colorista.online/" />
   </url>
   <url>
-    <loc>https://colorista.online/aboutus/</loc>
-    <lastmod>2024-03-28T00:00:00.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="canonical" href="https://colorista.online/aboutus/" />
-  </url>
-  <url>
     <loc>https://colorista.online/contact/</loc>
     <lastmod>2024-03-28T00:00:00.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="canonical" href="https://colorista.online/contact/" />
+  </url>
+  <url>
+    <loc>https://colorista.online/aboutus/</loc>
+    <lastmod>2024-03-28T00:00:00.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="canonical" href="https://colorista.online/aboutus/" />
   </url>
 </urlset>
