@@ -88,7 +88,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head><link rel="manifest" href="/manifest.json"/></head>
+      <head><link rel="manifest" href="/manifest.json"/>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5318691221930827"
+     crossorigin="anonymous"></script>
+     
+     </head>
       <body>{children}</body>
       <GoogleAnalytics gtmId="G-6DL9LFWCKE" />
       <GoogleTagManager gtmId="G-6DL9LFWCKE" />
